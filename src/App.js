@@ -1,12 +1,19 @@
 import React from 'react';
-import Button from './Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 export default function App() {
   return (
-    <div>
-      <h1 className="h4">Hello Webpack and Babel and React + JSX + Bootstrap</h1>
-      <Button />
+    <div className="row">
+      <div className="col">
+        <div className="d-flex justify-content-center">
+          <h1 className="h4">My Own Space</h1>
+        </div>
+        <div className="d-flex justify-content-center">
+          <FontAwesomeIcon icon={faUserAstronaut} size="10x" />
+        </div>
+      </div>
     </div>
   );
 }
